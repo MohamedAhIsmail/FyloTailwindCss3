@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import Logo from "./Logo";
 
 function Header() {
@@ -17,10 +18,18 @@ function Header() {
   ];
 
   return (
-    <header>
+    <header className=" flex items-center justify-between px-20 py-10">
       <Logo />
       <nav>
-        <ul></ul>
+        <ul className="flex gap-5">
+          {navLinks.map((link) => (
+            <li key={link.name}>
+              <NavLink to={link.path} className="text-white">
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
       </nav>
     </header>
   );
