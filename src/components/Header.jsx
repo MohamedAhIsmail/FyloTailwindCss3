@@ -1,8 +1,20 @@
 import Logo from "./Logo";
 
 function Header() {
-
-const navLinks = []
+  const navLinks = [
+    {
+      name: "Featres",
+      path: "#features",
+    },
+    {
+      name: "Team",
+      path: "#team",
+    },
+    {
+      name: "Sign In",
+      path: "#signin",
+    },
+  ];
 
   return (
     <header>
