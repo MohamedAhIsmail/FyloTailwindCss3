@@ -32,10 +32,10 @@ function Testimonials() {
   return (
     <section>
       <div className="container">
-        <div>
+        <div className="">
           <img src={quotes} alt="Qoutes" />
         </div>
-        <div className="">
+        <div className="grid grid-col-1 lg:grid-cols-3 gap-10">
           {testimonilas.map((testimonil) => (
             <TestimonilBox testimonil={testimonil} key={testimonil.name} />
           ))}
