@@ -1,8 +1,35 @@
+import { useEffect, useRef } from "react";
 
 function Footer() {
+  const toTopButton = useRef();
+  useEffect(() => {
+    function handleScroll() {
+      if (window.scrollY > 500) {
+        toTopButton.current.style.right = "20px";
+      } else {
+        toTopButton.current.style.right = "-60px";
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div>Footer</div>
-  )
+    <>
+      <div>Footer</div>
+      <div
+        ref={toTopButton}
+        onClick={() =>
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          })
+        }
+        className="w-2 h-2 p-5 flex justify-center items-center text-white rounded-sm bg-[#0C1524] fixed bottom-5 right-[-60px] shadow-md cursor-pointer transition-all duration-300"
+      >
+        T
+      </div>
+    </>
+  );
 }
 
-export default Footer
+export default Footer;

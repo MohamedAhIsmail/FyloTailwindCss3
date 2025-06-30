@@ -2,13 +2,20 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontFamily:{
+    fontFamily: {
       sans: "Roboto",
     },
     extend: {
       colors: {
-        mainColor: "#181E2A"
-      }
+        mainColor: "#181E2A",
+      },
+      screens: {
+        sm: "576px",
+        md: "768px",
+        lg: "922px",
+        xl: "1200px",
+        "2xl": "1400px",
+      },
     },
   },
   plugins: [],
