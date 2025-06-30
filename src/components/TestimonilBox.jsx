@@ -1,11 +1,15 @@
 function TestimonilBox({ testimonil }) {
   const { comment, avatar, title, name } = testimonil;
   return (
-    <div className="bg-[#21293C] text-white px-7 pt-10 pb-5 rounded-md shadow-md z-40">
+    <div className="bg-[#21293C] text-white px-7 pt-10 pb-5 rounded-md shadow-[8px_8px_1px_8px_#1c202c] z-40">
       <p className="text-sm mb-5">{comment}</p>
       <div className="flex items-center gap-5">
         <div className="w-16 h-16">
-          <img src={avatar} alt={name} className="rounded-full" />
+          <img
+            src={avatar}
+            alt={name}
+            className="rounded-full object-contain"
+          />
         </div>
         <div>
           <h4 className="font-semibold">{name}</h4>

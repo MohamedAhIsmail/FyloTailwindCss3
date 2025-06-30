@@ -30,12 +30,12 @@ const testimonilas = [
 
 function Testimonials() {
   return (
-    <section>
-      <div className="container">
-        <div className="">
+    <section className="py-20">
+      <div className="container relative">
+        <div className="absolute left-[20px] top-[-35px]">
           <img src={quotes} alt="Qoutes" />
         </div>
-        <div className="grid grid-col-1 lg:grid-cols-3 gap-10">
+        <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {testimonilas.map((testimonil) => (
             <TestimonilBox testimonil={testimonil} key={testimonil.name} />
           ))}
