@@ -2,7 +2,7 @@ import image from "../assets/illustration-intro.png";
 import Button from "./Button";
 function Landing() {
   return (
-    <section className="pt-[200px]">
+    <section className="pt-[220px] bg-[#1c2230]">
       <div className="container">
         <div className="element-center flex-col">
           <div className="w-[650px] max-w-full">
