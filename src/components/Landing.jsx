@@ -1,4 +1,5 @@
 import image from "../assets/illustration-intro.png";
+import Button from "./Button";
 function Landing() {
   return (
     <section className="pt-[200px]">
@@ -8,7 +9,7 @@ function Landing() {
             <img src={image} alt="Intro Landing" className="w-full h-fit " />
           </div>
 
-          <div className="text-white text-center mt-5">
+          <div className="text-white text-center my-5">
             <h1 className=" text-2xl md:text-4xl font-semibold pb-8">
               All your files in one secure location
               <br />
@@ -20,6 +21,8 @@ function Landing() {
               cumque ut expedita magnam ullam!
             </p>
           </div>
+
+          <Button>Get Started</Button>
         </div>
       </div>
     </section>
