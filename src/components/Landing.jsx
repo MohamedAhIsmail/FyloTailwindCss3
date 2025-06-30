@@ -1,4 +1,5 @@
 import image from "../assets/illustration-intro.png";
+import bgCurv from "../assets/bg-curvy-desktop.svg"
 import Button from "./Button";
 function Landing() {
   return (
@@ -24,6 +25,10 @@ function Landing() {
 
           <Button>Get Started</Button>
         </div>
+      </div>
+
+      <div className="max-w-full">
+        <img src={bgCurv} alt="Section image" className="w-full h-full"/>
       </div>
     </section>
   );

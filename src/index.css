@@ -4,7 +4,8 @@
 @tailwind utilities;
 
 body {
-  background-color: #181e2a;
+  /* background-color: #181e2a; */
+  background-color: #181F2B;
   height: 5000px;
 }
 
