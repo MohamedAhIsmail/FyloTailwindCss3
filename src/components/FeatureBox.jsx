@@ -1,6 +1,5 @@
 function FeatureBox({ feature }) {
   const { icon, title, description } = feature;
-  console.log(feature);
 
   return (
     <div className="text-white text-center element-center flex-col p-5">
