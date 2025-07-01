@@ -24,9 +24,9 @@ function ToTop() {
           behavior: "smooth",
         })
       }
-      className="w-12 h-12 border-[1px] border-[#21293C] p-3 flex justify-center items-center text-white rounded-[4px] bg-[#0C1524] fixed bottom-5 right-[-60px] shadow-md cursor-pointer transition-all duration-300 z-50"
+      className="w-12 h-12 border-[1px] border-[#21293C] p-3 flex justify-center items-center text-white rounded-[4px] bg-[#0C1524] fixed bottom-5 right-[-60px] shadow-md cursor-pointer transition-all duration-300 z-50 group"
     >
-      <HiChevronDoubleUp />
+      <HiChevronDoubleUp className="group-hover:animate-bounce" />
     </div>
   );
 }
