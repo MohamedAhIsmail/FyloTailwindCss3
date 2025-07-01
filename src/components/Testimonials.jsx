@@ -30,7 +30,7 @@ const testimonilas = [
 
 function Testimonials() {
   return (
-    <section className="py-20">
+    <section className="pt-20 pb-72">
       <div className="container relative">
         <div className="absolute left-[20px] top-[-35px]">
           <img src={quotes} alt="Qoutes" />
