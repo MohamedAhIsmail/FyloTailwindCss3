@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { HiChevronDoubleUp } from "react-icons/hi2";
 
 function ToTop() {
   const toTopButton = useRef();
@@ -23,9 +24,9 @@ function ToTop() {
           behavior: "smooth",
         })
       }
-      className="w-2 h-2 p-5 flex justify-center items-center text-white rounded-sm bg-[#0C1524] fixed bottom-5 right-[-60px] shadow-md cursor-pointer transition-all duration-300 z-50"
+      className="w-12 h-12 p-3 flex justify-center items-center text-white rounded-sm bg-[#0C1524] fixed bottom-5 right-[-60px] shadow-md cursor-pointer transition-all duration-300 z-50"
     >
-      T
+      <HiChevronDoubleUp />
     </div>
   );
 }
